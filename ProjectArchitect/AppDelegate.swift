@@ -8,39 +8,52 @@
 
 import UIKit
 
+#if DEVELOPMENT
+    let versions = "this is a dev environment"
+#else
+    let verisons = "this is a normal environment"
+#endif
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        
+        print(versions)
         return true
     }
-
-    func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
-    }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-    }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-    }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
-
-
+/*
+    1、MainEntrance: app主要流程入口
+    2、PodspecMetadata:一些配置文件
+    3、Macro:基类、请求类、公共类等集合文件夹
+        {
+        Base、
+        Category、
+        Public
+        }
+    4、General: 项目模块
+        {
+        LoginAndRegister、
+        Project_1、
+        Project_x、
+        }
+    5、SupportingFiles:选择without foulder生成虚拟文件夹
+     工程自动生成文件，如桥连接文件等
+*/
+    
+/*
+     多target管理工程
+     1.在主工程target下右键，选择Duplicate复制一个配置完全一样的target；
+     2.更改 target 名称：
+        (1).双击当前target至编辑模式，更改名称；
+        (2).Manager Schemes下找到对应target,回车进入编辑模式，更改名；
+        (3).更改新target下的info.plist路径。新的target下 -> Build Setting -> packaging -> Info.plist File；
+        (4).Bundle Identifier 需要不一样
+     3.设置全局 target 宏：       参考：https://www.jianshu.com/p/ed3abd649020
+        由于 Swift 项目，编译器不再支持预处理指令了。相对地，它使用了运行期属性(compile-time attributes)和构建配置。为了增加开发版构建的标志，选择开发 target。来到 Build Settings，向下滚动到 Swift Compiler - Custom Flags 小节。设置值为 -DDEVELOPMENT 来表明当前为 target 为开发版
+*/
 }
 

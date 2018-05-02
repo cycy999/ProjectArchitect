@@ -12,6 +12,11 @@
 		B6041B042099B0EA00061880 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6041B022099B0EA00061880 /* Main.storyboard */; };
 		B6041B062099B0EA00061880 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6041B052099B0EA00061880 /* Assets.xcassets */; };
 		B6041B092099B0EA00061880 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6041B072099B0EA00061880 /* LaunchScreen.storyboard */; };
+		B6041B2D2099BCBB00061880 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6041B002099B0EA00061880 /* ViewController.swift */; };
+		B6041B2E2099BCBB00061880 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6041AFE2099B0EA00061880 /* AppDelegate.swift */; };
+		B6041B312099BCBB00061880 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6041B072099B0EA00061880 /* LaunchScreen.storyboard */; };
+		B6041B322099BCBB00061880 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6041B052099B0EA00061880 /* Assets.xcassets */; };
+		B6041B332099BCBB00061880 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6041B022099B0EA00061880 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +27,21 @@
 		B6041B052099B0EA00061880 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6041B082099B0EA00061880 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6041B0A2099B0EA00061880 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6041B192099B37400061880 /* ProjectArchitect-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProjectArchitect-Bridging-Header.h"; sourceTree = "<group>"; };
+		B6041B2A2099B66F00061880 /* InfoDev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = InfoDev.plist; path = /Users/chenyan/Desktop/App_PrimaryTest/ProjectArchitect/ProjectArchitect/InfoDev.plist; sourceTree = "<absolute>"; };
+		B6041B372099BCBB00061880 /* ProjectArchitectDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectArchitectDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6041B382099BCBB00061880 /* ProjectArchitect copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ProjectArchitect copy-Info.plist"; path = "/Users/chenyan/Desktop/App_PrimaryTest/ProjectArchitect/ProjectArchitect copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B6041AF82099B0EA00061880 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6041B2F2099BCBB00061880 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,6 +56,7 @@
 			children = (
 				B6041AFD2099B0EA00061880 /* ProjectArchitect */,
 				B6041AFC2099B0EA00061880 /* Products */,
+				B6041B382099BCBB00061880 /* ProjectArchitect copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				B6041AFB2099B0EA00061880 /* ProjectArchitect.app */,
+				B6041B372099BCBB00061880 /* ProjectArchitectDev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,13 +73,95 @@
 			isa = PBXGroup;
 			children = (
 				B6041AFE2099B0EA00061880 /* AppDelegate.swift */,
-				B6041B002099B0EA00061880 /* ViewController.swift */,
+				B6041B1C2099B3E100061880 /* MainEntrance */,
+				B6041B132099B1A400061880 /* PodSpecMetadata */,
+				B6041B122099B19400061880 /* Macro */,
+				B6041B102099B11100061880 /* General */,
+				B6041B112099B14900061880 /* SupportingFiles */,
+			);
+			path = ProjectArchitect;
+			sourceTree = "<group>";
+		};
+		B6041B102099B11100061880 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				B6041B182099B1F800061880 /* Project_2 */,
+				B6041B172099B1E600061880 /* LoginAndRegister */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		B6041B112099B14900061880 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				B6041B022099B0EA00061880 /* Main.storyboard */,
 				B6041B052099B0EA00061880 /* Assets.xcassets */,
 				B6041B072099B0EA00061880 /* LaunchScreen.storyboard */,
 				B6041B0A2099B0EA00061880 /* Info.plist */,
+				B6041B2A2099B66F00061880 /* InfoDev.plist */,
+				B6041B192099B37400061880 /* ProjectArchitect-Bridging-Header.h */,
 			);
-			path = ProjectArchitect;
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		B6041B122099B19400061880 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				B6041B162099B1C600061880 /* Public */,
+				B6041B152099B1BF00061880 /* Category */,
+				B6041B142099B1B800061880 /* Base */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		B6041B132099B1A400061880 /* PodSpecMetadata */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PodSpecMetadata;
+			sourceTree = "<group>";
+		};
+		B6041B142099B1B800061880 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B6041B152099B1BF00061880 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		B6041B162099B1C600061880 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		B6041B172099B1E600061880 /* LoginAndRegister */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoginAndRegister;
+			sourceTree = "<group>";
+		};
+		B6041B182099B1F800061880 /* Project_2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Project_2;
+			sourceTree = "<group>";
+		};
+		B6041B1C2099B3E100061880 /* MainEntrance */ = {
+			isa = PBXGroup;
+			children = (
+				B6041B002099B0EA00061880 /* ViewController.swift */,
+			);
+			path = MainEntrance;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +184,23 @@
 			productReference = B6041AFB2099B0EA00061880 /* ProjectArchitect.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B6041B2B2099BCBB00061880 /* ProjectArchitectDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6041B342099BCBB00061880 /* Build configuration list for PBXNativeTarget "ProjectArchitectDev" */;
+			buildPhases = (
+				B6041B2C2099BCBB00061880 /* Sources */,
+				B6041B2F2099BCBB00061880 /* Frameworks */,
+				B6041B302099BCBB00061880 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProjectArchitectDev;
+			productName = ProjectArchitect;
+			productReference = B6041B372099BCBB00061880 /* ProjectArchitectDev.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +213,10 @@
 				TargetAttributes = {
 					B6041AFA2099B0EA00061880 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					B6041B2B2099BCBB00061880 = {
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -114,6 +235,7 @@
 			projectRoot = "";
 			targets = (
 				B6041AFA2099B0EA00061880 /* ProjectArchitect */,
+				B6041B2B2099BCBB00061880 /* ProjectArchitectDev */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +251,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B6041B302099BCBB00061880 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6041B312099BCBB00061880 /* LaunchScreen.storyboard in Resources */,
+				B6041B322099BCBB00061880 /* Assets.xcassets in Resources */,
+				B6041B332099BCBB00061880 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,6 +270,15 @@
 			files = (
 				B6041B012099B0EA00061880 /* ViewController.swift in Sources */,
 				B6041AFF2099B0EA00061880 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6041B2C2099BCBB00061880 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6041B2D2099BCBB00061880 /* ViewController.swift in Sources */,
+				B6041B2E2099BCBB00061880 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,11 +415,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ProjectArchitect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qt.ProjectArchitect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProjectArchitect/ProjectArchitect-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,11 +432,52 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ProjectArchitect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qt.ProjectArchitect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProjectArchitect/ProjectArchitect-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B6041B352099BCBB00061880 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ProjectArchitect/InfoDev.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DDEVELOPMENT";
+				PRODUCT_BUNDLE_IDENTIFIER = qt.ProjectArchitect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProjectArchitect/ProjectArchitect-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6041B362099BCBB00061880 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProjectArchitect/InfoDev.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DDEVELOPMENT";
+				PRODUCT_BUNDLE_IDENTIFIER = qt.ProjectArchitect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProjectArchitect/ProjectArchitect-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -315,6 +500,15 @@
 			buildConfigurations = (
 				B6041B0E2099B0EA00061880 /* Debug */,
 				B6041B0F2099B0EA00061880 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6041B342099BCBB00061880 /* Build configuration list for PBXNativeTarget "ProjectArchitectDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6041B352099BCBB00061880 /* Debug */,
+				B6041B362099BCBB00061880 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

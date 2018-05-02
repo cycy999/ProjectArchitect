@@ -6,8 +6,35 @@
 	<dict>
 		<key>ProjectArchitect.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>ProjectArchitectDev.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>B6041AFA2099B0EA00061880</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B6041B1D2099B66F00061880</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B6041B2B2099BCBB00061880</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
