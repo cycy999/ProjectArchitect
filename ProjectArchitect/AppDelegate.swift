@@ -33,6 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         LoginAndRegister、
         Project_1、
         Project_x、
+        ...
         }
     5、SupportingFiles:选择without foulder生成虚拟文件夹
      工程自动生成文件，如桥连接文件等
