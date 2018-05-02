@@ -8,12 +8,6 @@
 
 import UIKit
 
-#if DEVELOPMENT
-    let versions = "this is a dev environment"
-#else
-    let verisons = "this is a normal environment"
-#endif
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
