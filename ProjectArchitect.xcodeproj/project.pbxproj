@@ -31,6 +31,16 @@
 		B6041B4A2099C6BF00061880 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6041B482099C6BF00061880 /* BaseViewController.swift */; };
 		B6041B4C2099C6D900061880 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6041B4B2099C6D900061880 /* BaseTableViewCell.swift */; };
 		B6041B4D2099C6D900061880 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6041B4B2099C6D900061880 /* BaseTableViewCell.swift */; };
+		B6041B4F209A095900061880 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6041B4E209A095900061880 /* MainViewController.swift */; };
+		B6041B50209A095900061880 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6041B4E209A095900061880 /* MainViewController.swift */; };
+		B6041B53209A0A7A00061880 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6041B52209A0A7A00061880 /* PersonalViewController.swift */; };
+		B6041B54209A0A7A00061880 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6041B52209A0A7A00061880 /* PersonalViewController.swift */; };
+		B6041B57209A0AAB00061880 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6041B56209A0AAB00061880 /* HomeViewController.swift */; };
+		B6041B58209A0AAB00061880 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6041B56209A0AAB00061880 /* HomeViewController.swift */; };
+		B6041B5A209A0AD300061880 /* PlaceHolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6041B59209A0AD300061880 /* PlaceHolderViewController.swift */; };
+		B6041B5B209A0AD300061880 /* PlaceHolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6041B59209A0AD300061880 /* PlaceHolderViewController.swift */; };
+		B67D5BC8209A0FE100B81E45 /* Readme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67D5BC7209A0FE100B81E45 /* Readme.swift */; };
+		B67D5BC9209A0FE600B81E45 /* Readme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67D5BC7209A0FE100B81E45 /* Readme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +54,6 @@
 		B6041B192099B37400061880 /* ProjectArchitect-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProjectArchitect-Bridging-Header.h"; sourceTree = "<group>"; };
 		B6041B2A2099B66F00061880 /* InfoDev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = InfoDev.plist; path = /Users/chenyan/Desktop/App_PrimaryTest/ProjectArchitect/ProjectArchitect/InfoDev.plist; sourceTree = "<absolute>"; };
 		B6041B372099BCBB00061880 /* ProjectArchitectDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectArchitectDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6041B382099BCBB00061880 /* ProjectArchitect copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ProjectArchitect copy-Info.plist"; path = "/Users/chenyan/Desktop/App_PrimaryTest/ProjectArchitect/ProjectArchitect copy-Info.plist"; sourceTree = "<absolute>"; };
 		B6041B392099C40F00061880 /* ConfigurePro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurePro.swift; sourceTree = "<group>"; };
 		B6041B3C2099C68A00061880 /* String+Extenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extenstion.swift"; sourceTree = "<group>"; };
 		B6041B3D2099C68A00061880 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -52,6 +61,11 @@
 		B6041B452099C6A600061880 /* FilesPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesPath.swift; sourceTree = "<group>"; };
 		B6041B482099C6BF00061880 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B6041B4B2099C6D900061880 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		B6041B4E209A095900061880 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B6041B52209A0A7A00061880 /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
+		B6041B56209A0AAB00061880 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B6041B59209A0AD300061880 /* PlaceHolderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolderViewController.swift; sourceTree = "<group>"; };
+		B67D5BC7209A0FE100B81E45 /* Readme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Readme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +91,6 @@
 			children = (
 				B6041AFD2099B0EA00061880 /* ProjectArchitect */,
 				B6041AFC2099B0EA00061880 /* Products */,
-				B6041B382099BCBB00061880 /* ProjectArchitect copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +119,8 @@
 		B6041B102099B11100061880 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				B6041B55209A0A8C00061880 /* HomePage */,
+				B6041B51209A0A2400061880 /* PersonalPage */,
 				B6041B182099B1F800061880 /* Project_2 */,
 				B6041B172099B1E600061880 /* LoginAndRegister */,
 			);
@@ -180,6 +195,7 @@
 		B6041B182099B1F800061880 /* Project_2 */ = {
 			isa = PBXGroup;
 			children = (
+				B6041B59209A0AD300061880 /* PlaceHolderViewController.swift */,
 			);
 			path = Project_2;
 			sourceTree = "<group>";
@@ -187,9 +203,27 @@
 		B6041B1C2099B3E100061880 /* MainEntrance */ = {
 			isa = PBXGroup;
 			children = (
+				B67D5BC7209A0FE100B81E45 /* Readme.swift */,
 				B6041B002099B0EA00061880 /* ViewController.swift */,
+				B6041B4E209A095900061880 /* MainViewController.swift */,
 			);
 			path = MainEntrance;
+			sourceTree = "<group>";
+		};
+		B6041B51209A0A2400061880 /* PersonalPage */ = {
+			isa = PBXGroup;
+			children = (
+				B6041B52209A0A7A00061880 /* PersonalViewController.swift */,
+			);
+			path = PersonalPage;
+			sourceTree = "<group>";
+		};
+		B6041B55209A0A8C00061880 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				B6041B56209A0AAB00061880 /* HomeViewController.swift */,
+			);
+			path = HomePage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,10 +335,15 @@
 				B6041B3F2099C68A00061880 /* String+Extenstion.swift in Sources */,
 				B6041AFF2099B0EA00061880 /* AppDelegate.swift in Sources */,
 				B6041B4C2099C6D900061880 /* BaseTableViewCell.swift in Sources */,
+				B67D5BC8209A0FE100B81E45 /* Readme.swift in Sources */,
 				B6041B462099C6A600061880 /* FilesPath.swift in Sources */,
 				B6041B492099C6BF00061880 /* BaseViewController.swift in Sources */,
 				B6041B3A2099C40F00061880 /* ConfigurePro.swift in Sources */,
+				B6041B5A209A0AD300061880 /* PlaceHolderViewController.swift in Sources */,
 				B6041B412099C68A00061880 /* UIColor+Extension.swift in Sources */,
+				B6041B4F209A095900061880 /* MainViewController.swift in Sources */,
+				B6041B53209A0A7A00061880 /* PersonalViewController.swift in Sources */,
+				B6041B57209A0AAB00061880 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,10 +356,15 @@
 				B6041B402099C68A00061880 /* String+Extenstion.swift in Sources */,
 				B6041B2E2099BCBB00061880 /* AppDelegate.swift in Sources */,
 				B6041B4D2099C6D900061880 /* BaseTableViewCell.swift in Sources */,
+				B67D5BC9209A0FE600B81E45 /* Readme.swift in Sources */,
 				B6041B472099C6A600061880 /* FilesPath.swift in Sources */,
 				B6041B4A2099C6BF00061880 /* BaseViewController.swift in Sources */,
 				B6041B3B2099C40F00061880 /* ConfigurePro.swift in Sources */,
+				B6041B5B209A0AD300061880 /* PlaceHolderViewController.swift in Sources */,
 				B6041B422099C68A00061880 /* UIColor+Extension.swift in Sources */,
+				B6041B50209A095900061880 /* MainViewController.swift in Sources */,
+				B6041B54209A0A7A00061880 /* PersonalViewController.swift in Sources */,
+				B6041B58209A0AAB00061880 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

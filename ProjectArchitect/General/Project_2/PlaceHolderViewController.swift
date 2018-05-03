@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PlaceHolderViewController.swift
 //  ProjectArchitect
 //
 //  Created by 陈岩 on 2018/5/2.
@@ -8,19 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PlaceHolderViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.red
-        // Do any additional setup after loading the view, typically from a nib.
+        title = "占位"
+        view.backgroundColor = UIColor().randomColor()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
+    
 
 }
-

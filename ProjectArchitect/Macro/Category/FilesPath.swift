@@ -21,8 +21,8 @@ class FilesPath: NSObject {
         print("docDir:" + docDir)
         
         //Library的目录路径，有两个子目录，除caches外，也会被iTunes备份
-        //Preferences：应用程序的偏好设置文件。不应该直接创建偏好设置文件，应使用NSUserDefaults类来获取和设置应用程序的偏好
-        //Caches：存放程序专用的支持文件，保存应用程序再次启动过程中需要的信息。
+        //(1)、Preferences：应用程序的偏好设置文件。不应该直接创建偏好设置文件，应使用NSUserDefaults类来获取和设置应用程序的偏好
+        //(2)、Caches：存放程序专用的支持文件，保存应用程序再次启动过程中需要的信息。
         let libDir = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.libraryDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0]
         print("libDir:" + libDir)
         

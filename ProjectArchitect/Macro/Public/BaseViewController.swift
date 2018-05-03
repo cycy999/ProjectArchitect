@@ -10,6 +10,10 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
+    lazy var id = ""
+    
+    var navController: UINavigationController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,5 +22,4 @@ class BaseViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
 }
