@@ -10,15 +10,21 @@ import UIKit
 
 class PersonalViewController: BaseViewController {
 
+    let source = [
+        (title: "占位栏1", controller: NSStringFromClass(BaseViewController.self)),
+        (title: "占位栏2", controller: NSStringFromClass(BaseViewController.self)),
+        (title: "占位栏3", controller: NSStringFromClass(BaseViewController.self)),
+        (title: "清除缓存", controller: NSStringFromClass(BaseViewController.self))
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor().randomColor()
-        
+        tableViewAttribute()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -26,7 +32,47 @@ class PersonalViewController: BaseViewController {
         print(getSize())
         clearCaches()
     }
+    
 }
+
+extension PersonalViewController {
+    
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return source.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
+        if cell == nil {
+            cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
+        }
+        cell?.textLabel?.text = source[indexPath.row].title
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let className = source[indexPath.row].controller
+        if indexPath.row == 3 {
+            let vc = PersonalViewController()
+            vc.hidesBottomBarWhenPushed = true
+            let backBarButtonItem = UIBarButtonItem(title: "haha", style: .plain, target: nil, action: nil)
+            navigationItem.backBarButtonItem = backBarButtonItem
+            show(vc, sender: nil)
+            return
+        }
+        if let vcType = NSClassFromString(className) {
+            let vc = (vcType as! UIViewController.Type).init()
+            vc.hidesBottomBarWhenPushed = true
+            let backBarButtonItem = UIBarButtonItem(title: "haha", style: .plain, target: nil, action: nil)
+            navigationItem.backBarButtonItem = backBarButtonItem
+            show(vc, sender: nil)
+        }
+    }
+    
+}
+
 //MARK: - 清除缓存
 extension PersonalViewController {
     func getSize() -> String {

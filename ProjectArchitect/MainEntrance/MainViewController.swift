@@ -12,6 +12,7 @@ class MainViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         test_config_nav()
         
     }
@@ -42,7 +43,12 @@ extension MainViewController {
         
         let placeHolderPage = PlaceHolderViewController()
         placeHolderPage.tabBarItem = UITabBarItem(title: "占位", image: nil, tag: 1)
-        placeHolderPage.tabBarItem.setBadgeTextAttributes([NSAttributedStringKey.foregroundColor.rawValue: UIColor.getColor("45b173")], for: .normal)
+        if #available(iOS 10.0, *) {
+            placeHolderPage.tabBarItem.setBadgeTextAttributes([
+                NSAttributedStringKey.foregroundColor.rawValue: UIColor.getColor("45b173")], for: .normal)
+        } else {
+            // Fallback on earlier versions
+        }
         let placeHolderNav = UINavigationController(rootViewController: placeHolderPage)
         
         let personalPage = PersonalViewController()
@@ -94,7 +100,7 @@ extension MainViewController {
         childVC.tabBarItem.image = UIImage(named: image)//?.withRenderingMode(.alwaysOriginal)
         childVC.tabBarItem.selectedImage = UIImage(named: selectedImage)?.withRenderingMode(.alwaysOriginal)
         childVC.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -2)//向上偏移2个像素
-        let nav = UINavigationController(rootViewController: childVC)
+        let nav = CustomNavigationController(rootViewController: childVC)
         nav.view.backgroundColor = UIColor.white
         nav.navigationBar.barStyle = .default //共四种样式，default默认白色半透明，后三种差别不大 （black、blackOpaque、blackTranslucent）
         addChildViewController(nav)

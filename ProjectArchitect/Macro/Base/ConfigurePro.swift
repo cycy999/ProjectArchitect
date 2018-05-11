@@ -11,7 +11,7 @@ import UIKit
 let versions = "this is a dev environment"
 let ROOT_URL = "root_url_dev"
 #else
-let verisons = "this is a normal environment"
+let versions = "this is a normal environment"
 let ROOT_URL = "root_url"
 #endif
 

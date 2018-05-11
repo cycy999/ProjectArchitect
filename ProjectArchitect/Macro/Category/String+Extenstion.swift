@@ -94,6 +94,17 @@ extension String {
         
         //替换字符串  Hnewo
         str.replacingCharacters(in: startIndex...endIndex, with: "new")
-
+        
+        print(str.contains("cd"))//是否包含子串
     }
+    
+    func regex(pattern: String, str: String) -> Bool {
+        let regex = try! NSRegularExpression(pattern: pattern, options: [NSRegularExpression.Options.caseInsensitive])
+        let resultNum = regex.numberOfMatches(in: str, options: NSRegularExpression.MatchingOptions.init(rawValue: 0), range: NSMakeRange(0, str.count))
+        if resultNum > 1 {
+            return true
+        }
+        return false
+    }
+    
 }
